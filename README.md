@@ -3,12 +3,33 @@
 Clone the repository and set up the environment:
 
 ```python
-conda create -n HPNet python=3.8
-conda activate HPNet
+conda create -n TPNet python=3.8
+conda activate TPNet
 conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
 pip install torch_geometric==2.3.1
 conda install pytorch-lightning==2.0.3
+pip install lanelet2==1.2.1
 ```
+
+## Dataset
+f you can provide proof of authorization for the exiD dataset, please contact zinunikin@163.com to obtain the dataset.
+
+## Training
+Data preprocessing may take several hours the first time you run this project. Training on a RTX 4090 GPU.
+```python
+python train.py --root /path/to/data_root/ --train_batch_size 8 --val_batch_size 8 --front_loss_weight 0.4 --devices 1
+```
+
+## Validation
+```python
+python val.py --root /path/to/data_root/ --val_batch_size 8 --devices 1
+```
+
+## Testing
+```python
+python test.py --root /path/to/data_root/ --test_batch_size 8 --devices 1
+```
+
 
 ## Acknowladgement
 Please also support the representation learning work on which this work is based:
