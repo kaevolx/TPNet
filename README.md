@@ -12,7 +12,7 @@ pip install lanelet2==1.2.1
 ```
 
 ## Dataset
-f you can provide proof of authorization for the exiD dataset, please contact zinunikin@163.com to obtain the dataset.
+If you can provide proof of authorization for the exiD dataset, please contact zinunikin@163.com to obtain the dataset.
 
 ## Training
 Data preprocessing may take several hours the first time you run this project. Training on a RTX 4090 GPU.
