@@ -13,5 +13,5 @@ conda install pytorch-lightning==2.0.3
 ## Acknowladgement
 Please also support the representation learning work on which this work is based:
 
-HPNet：&emsp;&emsp;&emsp;&emsp;[HPNet: Dynamic Trajectory Forecasting with Historical Prediction Attention](https://openaccess.thecvf.com/content/CVPR2024/html/Tang_HPNet_Dynamic_Trajectory_Forecasting_with_Historical_Prediction_Attention_CVPR_2024_paper.html)  
+HPNet：[HPNet: Dynamic Trajectory Forecasting with Historical Prediction Attention](https://openaccess.thecvf.com/content/CVPR2024/html/Tang_HPNet_Dynamic_Trajectory_Forecasting_with_Historical_Prediction_Attention_CVPR_2024_paper.html)  
         &emsp;&emsp;&emsp;&emsp;[code](https://github.com/XiaolongTang23/HPNet)
