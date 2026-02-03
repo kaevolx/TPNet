@@ -10,6 +10,7 @@ conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=
 pip install torch_geometric==2.3.1
 conda install pytorch-lightning==2.0.3
 pip install lanelet2==1.2.1
+pip install -r requirements.txt
 ```
 
 ## Dataset
