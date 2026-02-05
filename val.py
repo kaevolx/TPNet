@@ -24,7 +24,7 @@ if __name__ == '__main__':
     TPNet.add_model_specific_args(parser)
     args = parser.parse_args()
 
-    model = HPNet.load_from_checkpoint(checkpoint_path=args.ckpt_path)
+    model = TPNet.load_from_checkpoint(checkpoint_path=args.ckpt_path)
     trainer = pl.Trainer(devices=args.devices, accelerator='gpu')
     val_dataset = INTERACTIONDataset(args.root, 'val', transform=None)
     dataloader = DataLoader(val_dataset, batch_size=args.val_batch_size, shuffle=False,
